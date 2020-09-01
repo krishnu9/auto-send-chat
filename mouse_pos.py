@@ -1,7 +1,14 @@
 import pyautogui as pg
 import time
 
-time.sleep(1)
-x, y = pg.position()
 
-print(x, y)
+def get_mouse_pos():
+    print("Place the cursor on the text-area after 5 seconds...")
+    time.sleep(2)
+    x, y = pg.position()
+    return x, y
+
+
+if __name__ == "__main__":
+    x, y = get_mouse_pos()
+    print(x, y)
