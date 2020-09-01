@@ -4,7 +4,7 @@ import time
 
 def get_mouse_pos():
     print("Place the cursor on the text-area after 5 seconds...")
-    time.sleep(2)
+    time.sleep(5)
     x, y = pg.position()
     return x, y
 
